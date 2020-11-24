@@ -11,6 +11,7 @@ using Supermarket.API.Persistence.Repositories;
 using Supermarket.API.Services;
 using Microsoft.Extensions.Hosting;
 using AutoMapper;
+using Supermarket.API.Persistance.Repositories;
 
 namespace Supermarket.API
 {
@@ -33,6 +34,7 @@ namespace Supermarket.API
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddAutoMapper(typeof(Startup));
         }
