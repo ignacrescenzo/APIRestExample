@@ -29,4 +29,5 @@
 -	Ejecutamos en la raíz del proyecto `heroku git:remote -a {NOMBREAPP}`.
 -	Seguir los pasos de: pestaña Deploy --> Deployment method --> opción Container Registry.
 -	Esto nos desplegará una versión de Heroku de nuestra aplicación de Docker.
--	Para abrirla, corremos `heroku open` y se nos abrirá en el navegador para poder utilizar. 
+-	Para abrirla, corremos `heroku open` y se nos abrirá en el navegador para poder utilizar.
+- Si hacemos cambios en el proyecto, al hacer `git push heroku master` desplegaremos una nueva versión.
